@@ -33,21 +33,21 @@ The above copyright notice and this permission notice shall be included in
 class ID20Reader
 {
 public:	
-	ID20Reader(uint8_t _rx, uint8_t _tx);	
-	~ID20Reader() {}
-	
-	ID20Reader(const ID20Reader&); //prevent copying of this class
-	ID20Reader &operator = (const ID20Reader&); //prevent copying of this class
-	
-	bool available(); //returns true if a code is available in the queue
-	String get(); //returns the next code in the queue
-	
-	void read(); //needs to be called on every loop
+    ID20Reader(uint8_t _rx, uint8_t _tx);	
+    ~ID20Reader() {}
+    
+    ID20Reader(const ID20Reader&); //prevent copying of this class
+    ID20Reader &operator = (const ID20Reader&); //prevent copying of this class
+    
+    bool available(); //returns true if a code is available in the queue
+    String get(); //returns the next code in the queue
+    
+    void read(); //needs to be called on every loop
 
 private:
     String currentCode;
     bool is_available;
-	SoftwareSerial RFIDSerial;
+    SoftwareSerial RFIDSerial;
 };
 
 
