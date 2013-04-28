@@ -1,0 +1,4 @@
+ID20Reader	KEYWORD1
+available	KEYWORD1
+get	KEYWORD1
+read	KEYWORD1
