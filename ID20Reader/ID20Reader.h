@@ -33,7 +33,7 @@ The above copyright notice and this permission notice shall be included in
 class ID20Reader
 {
 public:	
-	ID20Reader(uint8_t _rx, uint8_t _tx, long _baud);	
+	ID20Reader(uint8_t _rx, uint8_t _tx);	
 	~ID20Reader() {}
 	
 	ID20Reader(const ID20Reader&); //prevent copying of this class
