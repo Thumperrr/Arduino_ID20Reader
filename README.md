@@ -11,3 +11,34 @@ You can also post in the issues on GitHub if you find problems or have general q
 
 ## Testing
 So far this library has only been tested with an Arduino Uno (rev 3.) If you have success with other versions of the arduino, I would very much like to know about it!
+
+## Download and Installation
+[Download the library by clicking here](https://github.com/Thumperrr/Arduino_ID20Reader/archive/master.zip)
+Unzip the library to any location.
+Move the ID20Reader folder into your Arduino Libraries directory. 
+Begin coding.
+
+## Example code
+```C++
+#include <ID20Reader.h>
+
+int rx_pin = 9; //Data input pin
+int tx_pin = 8; //Unused, but must be defined. (Nothing is sent from the Arduino to the reader.)
+
+ID20Reader rfid(rx_pin, tx_pin); //Create an instance of ID20Reader.
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println("RFID Reader - Swipe a card ~~~~~");
+}
+
+void loop() {
+  rfid.read(); //Receive a tag from the reader if available
+  
+  if(rfid.available()) //a tag has been read
+  {
+    String code = rfid.get(); //Get the tag
+    Serial.println(code); //Print the tag to the serial monitor
+  }
+}
+```
