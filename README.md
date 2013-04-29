@@ -13,7 +13,7 @@ You can also post in the issues on GitHub if you find problems or have general q
 So far this library has only been tested with an Arduino Uno (rev 3.) If you have success with other versions of the arduino, I would very much like to know about it!
 
 ## Download and Installation
-[Download the library by clicking here](https://github.com/Thumperrr/Arduino_ID20Reader/archive/master.zip)
+[Download the library by clicking here](https://github.com/Thumperrr/Arduino_ID20Reader/archive/master.zip).
 Unzip the library to any location.
 Move the ID20Reader folder into your Arduino Libraries directory. 
 Begin coding.
