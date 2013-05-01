@@ -1,0 +1,95 @@
+\hypertarget{class_i_d20_reader}{\section{I\-D20\-Reader Class Reference}
+\label{class_i_d20_reader}\index{I\-D20\-Reader@{I\-D20\-Reader}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_i_d20_reader_ac0b535d8bf02e348a14f14b5c69a587a}{I\-D20\-Reader} (uint8\-\_\-t \-\_\-rx, uint8\-\_\-t \-\_\-tx)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_i_d20_reader}{I\-D20\-Reader} Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_i_d20_reader_aaeecf0e983f085e3b8fbf1a5ad12218a}{\hyperlink{class_i_d20_reader_aaeecf0e983f085e3b8fbf1a5ad12218a}{I\-D20\-Reader} (const \hyperlink{class_i_d20_reader}{I\-D20\-Reader} \&)}\label{class_i_d20_reader_aaeecf0e983f085e3b8fbf1a5ad12218a}
+
+\begin{DoxyCompactList}\small\item\em Copy-\/protecting constructors. There is no reason to be able to copy this class. \end{DoxyCompactList}\item 
+\hypertarget{class_i_d20_reader_ad7f2bc01b67d689ed34eda6cd9d106e9}{\hyperlink{class_i_d20_reader}{I\-D20\-Reader} \& {\bfseries operator=} (const \hyperlink{class_i_d20_reader}{I\-D20\-Reader} \&)}\label{class_i_d20_reader_ad7f2bc01b67d689ed34eda6cd9d106e9}
+
+\item 
+bool \hyperlink{class_i_d20_reader_af6685ddc8c2c5c5c49993bcd6b40e85c}{available} ()
+\begin{DoxyCompactList}\small\item\em Tells whether or not a code is available. \end{DoxyCompactList}\item 
+String \hyperlink{class_i_d20_reader_a1a7c4b0e2e5e0ce46a76a9e17b958e5c}{get} ()
+\item 
+void \hyperlink{class_i_d20_reader_ab147baa6dfa6c4ee37bb8d96bb36f854}{read} ()
+\begin{DoxyCompactList}\small\item\em This function goes through the process of checking to see if the R\-F\-I\-D reader has sent the Arduino any information. If the reader is trying to send a key, the function interprets the data and stores the key for later retrieval. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_i_d20_reader_ac0b535d8bf02e348a14f14b5c69a587a}{\index{I\-D20\-Reader@{I\-D20\-Reader}!I\-D20\-Reader@{I\-D20\-Reader}}
+\index{I\-D20\-Reader@{I\-D20\-Reader}!ID20Reader@{I\-D20\-Reader}}
+\subsubsection[{I\-D20\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}I\-D20\-Reader\-::\-I\-D20\-Reader (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{\-\_\-rx, }
+\item[{uint8\-\_\-t}]{\-\_\-tx}
+\end{DoxyParamCaption}
+)}}\label{class_i_d20_reader_ac0b535d8bf02e348a14f14b5c69a587a}
+
+
+\hyperlink{class_i_d20_reader}{I\-D20\-Reader} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-rx} & The digital pin used as the R\-X pin for a Software\-Serial instance. \\
+\hline
+{\em \-\_\-tx} & The digital pin used as the T\-X pin for a Software\-Serial instance. (N\-O\-T\-E\-: This pin is unused, but needs to be declared. Software\-Serial requires pins in pairs.) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_i_d20_reader_af6685ddc8c2c5c5c49993bcd6b40e85c}{\index{I\-D20\-Reader@{I\-D20\-Reader}!available@{available}}
+\index{available@{available}!ID20Reader@{I\-D20\-Reader}}
+\subsubsection[{available}]{\setlength{\rightskip}{0pt plus 5cm}bool I\-D20\-Reader\-::available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_i_d20_reader_af6685ddc8c2c5c5c49993bcd6b40e85c}
+
+
+Tells whether or not a code is available. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_i_d20_reader_af6685ddc8c2c5c5c49993bcd6b40e85c}{available()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+true if a code is available. False otherwise. 
+\end{DoxyReturn}
+\hypertarget{class_i_d20_reader_a1a7c4b0e2e5e0ce46a76a9e17b958e5c}{\index{I\-D20\-Reader@{I\-D20\-Reader}!get@{get}}
+\index{get@{get}!ID20Reader@{I\-D20\-Reader}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}String I\-D20\-Reader\-::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_i_d20_reader_a1a7c4b0e2e5e0ce46a76a9e17b958e5c}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_i_d20_reader_a1a7c4b0e2e5e0ce46a76a9e17b958e5c}{get()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+A String containing a read code (if available) 
+\end{DoxyReturn}
+\hypertarget{class_i_d20_reader_ab147baa6dfa6c4ee37bb8d96bb36f854}{\index{I\-D20\-Reader@{I\-D20\-Reader}!read@{read}}
+\index{read@{read}!ID20Reader@{I\-D20\-Reader}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void I\-D20\-Reader\-::read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_i_d20_reader_ab147baa6dfa6c4ee37bb8d96bb36f854}
+
+
+This function goes through the process of checking to see if the R\-F\-I\-D reader has sent the Arduino any information. If the reader is trying to send a key, the function interprets the data and stores the key for later retrieval. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_i_d20_reader_ab147baa6dfa6c4ee37bb8d96bb36f854}{read()} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+I\-D20\-Reader.\-h\item 
+I\-D20\-Reader.\-cpp\end{DoxyCompactItemize}
