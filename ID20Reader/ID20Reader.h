@@ -28,7 +28,7 @@ The above copyright notice and this permission notice shall be included in
 #define ID20READER_H
 
 #include <Arduino.h>
-#include "../SoftwareSerial/SoftwareSerial.h"
+#include <SoftwareSerial.h>
 
 class ID20Reader
 {

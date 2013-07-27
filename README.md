@@ -15,11 +15,17 @@ So far this library has only been tested with an Arduino Uno (rev 3.) If you hav
 ## Download and Installation
 [Download the library by clicking here](https://github.com/Thumperrr/Arduino_ID20Reader/archive/master.zip).
 Unzip the library to any location.
-Move the ID20Reader folder into your Arduino Libraries directory. 
+Move the ID20Reader folder into your Arduino Libraries directory.
 Begin coding.
+
+Note:
+On Mac and Linux, the library folder will be something like `Documents\Arduino\libraries\`
+On Windows, it will be something like `My Documents/Arduino/libraries/`
 
 ## Example code
 ```C++
+#include <SoftwareSerial.h> // Dependency of ID20Reader. Must include in main file
+                            // Due to Arduino software limitations.
 #include <ID20Reader.h>
 
 int rx_pin = 9; //Data input pin

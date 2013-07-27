@@ -25,7 +25,6 @@ The above copyright notice and this permission notice shall be included in
 */
 
 #include "ID20Reader.h"
-#include "../SoftwareSerial/SoftwareSerial.cpp"
 
 ID20Reader::ID20Reader(uint8_t _rx, uint8_t _tx) 
     : RFIDSerial(_rx, _tx), is_available(false)

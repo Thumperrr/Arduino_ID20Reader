@@ -1,3 +1,5 @@
+#include <SoftwareSerial.h> // Dependency of ID20Reader. Must include in main file
+                            // Due to Arduino software limitations.
 #include <ID20Reader.h>
 
 int rx_pin = 9; //Data input pin
@@ -12,7 +14,7 @@ void setup() {
 
 void loop() {
   rfid.read(); //Receive a tag from the reader if available
-
+  
   if(rfid.available()) //a tag has been read
   {
     String code = rfid.get(); //Get the tag
